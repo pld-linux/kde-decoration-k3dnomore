@@ -33,7 +33,7 @@ mo¿na znale¼æ na kde-look. Zawiera modu³ konfiguracyjny dla kcontrol.
 kde_htmldir="%{_htmldir}"; export kde_htmldir
 kde_icondir="%{_pixmapsdir}"; export kde_icondir
 
-%configure 
+%configure
 %{__make}
 
 %install
