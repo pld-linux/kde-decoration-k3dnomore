@@ -7,7 +7,7 @@ Release:	1
 License:	GPL
 Group:		Themes
 Source0:	%{_decoration}-%{version}.tar.gz
-# Source0-md5: bd46e58a3e9d3b4d6c4f309d0feb539e
+# Source0-md5:	bd46e58a3e9d3b4d6c4f309d0feb539e
 URL:		http://www.kde-look.org/content/show.php?content=4213
 BuildRequires:	autoconf
 BuildRequires:	automake
