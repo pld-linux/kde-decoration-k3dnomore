@@ -13,11 +13,10 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	freetype-devel
 BuildRequires:	qt-devel >= 3.0.5
+BuildRequires:	rpmbuild(macros) >= 1.129
 BuildConflicts:	kdebase-devel >= 9:3.2.0
 Requires:	kdelibs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define         _htmldir        /usr/share/doc/kde/HTML
 
 %description
 k3dnomore is one of more creative kwin decorations found on kde-look,
@@ -31,15 +30,15 @@ mo¿na znale¼æ na kde-look. Zawiera modu³ konfiguracyjny dla kcontrol.
 %setup -q -n %{_decoration}-%{version}
 
 %build
-kde_htmldir="%{_htmldir}"; export kde_htmldir
-kde_icondir="%{_pixmapsdir}"; export kde_icondir
-
+kde_htmldir="%{_kdedocdir}"; export kde_htmldir
 %configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
