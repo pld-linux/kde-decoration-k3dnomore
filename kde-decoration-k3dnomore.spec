@@ -13,6 +13,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	freetype-devel
 BuildRequires:	qt-devel >= 3.0.5
+BuildConflicts:	kdebase-devel >= 9:3.2.0
 Requires:	kdelibs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
