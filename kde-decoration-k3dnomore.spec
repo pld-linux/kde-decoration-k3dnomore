@@ -5,7 +5,7 @@ Name:		kde-decoration-%{_decoration}
 Version:	0.7
 Release:	1
 License:	GPL
-Group:		Themes/Gtk
+Group:		Themes
 Source0:	%{_decoration}-%{version}.tar.gz
 URL:		http://www.kde-look.org/content/show.php?content=4213
 BuildRequires:	autoconf
@@ -18,11 +18,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define         _htmldir        /usr/share/doc/kde/HTML
 
 %description
-%{_decoration} is one of more creative kwin decorations found on kde-look, 
+k3dnomore is one of more creative kwin decorations found on kde-look,
 includes configuration module for kcontrol.
 
 %description -l pl
-%{_decoration} to jedna z najbardziej kreatywnych dekoracji kwin, jakie
+k3dnomore to jedna z najbardziej kreatywnych dekoracji kwin, jakie
 mo¿na znale¼æ na kde-look. Zawiera modu³ konfiguracyjny dla kcontrol.
 
 %prep
@@ -38,10 +38,6 @@ kde_icondir="%{_pixmapsdir}"; export kde_icondir
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-
-%post
-/sbin/ldconfig
 
 %clean
 rm -rf $RPM_BUILD_ROOT
