@@ -2,7 +2,7 @@
 Summary:	Kwin decoration - %{_decoration}
 Summary(pl):	Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
-Version:	0.6
+Version:	0.7
 Release:	1
 License:	GPL
 Group:		Themes/Gtk
