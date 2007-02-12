@@ -1,6 +1,6 @@
 %define		_decoration 	k3dnomore
 Summary:	Kwin decoration - %{_decoration}
-Summary(pl):	Dekoracja kwin - %{_decoration}
+Summary(pl.UTF-8):   Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
 Version:	0.7
 Release:	1
@@ -22,9 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 k3dnomore is one of more creative kwin decorations found on kde-look,
 includes configuration module for kcontrol.
 
-%description -l pl
+%description -l pl.UTF-8
 k3dnomore to jedna z najbardziej kreatywnych dekoracji kwin, jakie
-moøna znaleºÊ na kde-look. Zawiera modu≥ konfiguracyjny dla kcontrol.
+mo≈ºna znale≈∫ƒá na kde-look. Zawiera modu≈Ç konfiguracyjny dla kcontrol.
 
 %prep
 %setup -q -n %{_decoration}-%{version}
