@@ -12,7 +12,7 @@ URL:		http://www.kde-look.org/content/show.php?content=4213
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	freetype-devel
-BuildRequires:	qt-devel >= 3.0.5
+BuildRequires:	qt-devel >= 6:3.0.5
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildConflicts:	kdebase-devel >= 9:3.2.0
 Requires:	kdelibs
